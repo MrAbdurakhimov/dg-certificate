@@ -29,7 +29,7 @@ const Form = () => {
           variant="contained"
           size="large"
         >
-          Login
+          Sertifikat olish
         </Button>
       </Box>
     </Container>
