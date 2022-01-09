@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Login from "./pages/Login/";
+import Certificate from "./pages/Certificate/";
 import "./styles/main.css";
 
 import { ThemeProvider } from "@mui/system";
@@ -17,6 +18,7 @@ ReactDOM.render(
       <BrowserRouter>
         <CustomSwitch>
           <Route path="/" element={<Login />} />
+          <Route path='/certificate/:catid' element={<Certificate />} />
         </CustomSwitch>
       </BrowserRouter>
     </ThemeProvider>

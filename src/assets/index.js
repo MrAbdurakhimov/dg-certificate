@@ -1,4 +1,4 @@
 import mainBg from "./images/main-bg.jpg";
 import logo from "./images/logo.png";
-
-export { logo, mainBg };
+import certificate from "./images/certificate.png";
+export { logo, mainBg, certificate };
