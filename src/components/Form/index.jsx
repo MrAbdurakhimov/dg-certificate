@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Navigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import styled from "styled-components";
 import { Button, FormControl, TextField } from "@mui/material";
@@ -10,7 +11,7 @@ const Container = styled.div`
 
 const Form = () => {
   const [values, setValues] = React.useState({ email: "" });
-
+  const [redirect, setRedirect] = React.useState({ redirect: false, path: "" });
   const handleChange = (prop) => (event) => {
     setValues({ ...values, [prop]: event.target.value });
     console.log(values);
@@ -18,11 +19,14 @@ const Form = () => {
 
   const finder = (email) => {
     const user = findUser(email);
-    console.log(user);
+    if (user) {
+      setRedirect({ redirect: true, path: email });
+    }
   };
 
   return (
     <Container>
+      {redirect.redirect && <Navigate to={"/certificate/" + redirect.path} />}
       <Box
         component="form"
         fullWidth

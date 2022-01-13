@@ -18,7 +18,7 @@ ReactDOM.render(
       <BrowserRouter>
         <CustomSwitch>
           <Route path="/" element={<Login />} />
-          <Route path='/certificate/:catid' element={<Certificate />} />
+          <Route path="/certificate/:catid" element={<Certificate />} />
         </CustomSwitch>
       </BrowserRouter>
     </ThemeProvider>
