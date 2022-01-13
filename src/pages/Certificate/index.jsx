@@ -4,8 +4,6 @@ import { findUser } from "../../utils/findUser";
 import { useParams } from "react-router-dom";
 
 import QRCode from "react-qr-code";
-
-import { certificate } from "../../assets/";
 import { Download } from "react-feather";
 const Container = styled.div`
   display: flex;
