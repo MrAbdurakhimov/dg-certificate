@@ -77,7 +77,7 @@ const Certificate = () => {
         <QRArea>
           <QRCode
             size={64}
-            value={"https://dg-cert.uz/certificate/" + params.catid}
+            value={"https://dg-certification.netlify.app/certificate/" + params.catid}
           />
         </QRArea>
       </CertificateArea>
