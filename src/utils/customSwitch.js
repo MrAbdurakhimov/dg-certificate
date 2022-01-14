@@ -3,8 +3,8 @@ import { Routes, useLocation } from "react-router-dom";
 import TopBarProgress from "react-topbar-progress-indicator";
 TopBarProgress.config({
   barColors: {
-    0: "#c49a6c",
-    "1.0": "#c49a6c",
+    0: "#0085ad",
+    "1.0": "#0085ad",
   },
   shadowBlur: 1,
 });
